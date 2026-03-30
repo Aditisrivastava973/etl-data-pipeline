@@ -1,28 +1,37 @@
-# ETL Data Pipeline (CSV → MySQL)
+# 🚀 ETL Data Pipeline (CSV → MySQL)
 
-## Overview
-Built an end-to-end ETL pipeline to process e-commerce order data using Python and MySQL.
+## 📌 Overview
+This project implements an end-to-end ETL (Extract, Transform, Load) pipeline using Python and MySQL to process real-world e-commerce order data.
 
-## Tech Stack
+## ⚙️ Tech Stack
 - Python (Pandas)
 - MySQL
 - Git
 
-## Features
-- Extracted raw CSV data
-- Transformed data (cleaning, handling missing values, date formatting)
-- Loaded structured data into MySQL
-- Automated pipeline workflow
+## 🔄 Pipeline Workflow
+1. Extract data from CSV file
+2. Transform data (cleaning, handling missing values, datetime conversion)
+3. Load data into MySQL database
 
-## How to Run
-1. Install dependencies:
-   pip install -r requirements.txt
+## 📂 Project Structure
 
-2. Run pipeline:
-   python scripts/main.py
+scripts/
+extract.py
+transform.py
+load.py
+main.py
+data/
+raw_data.csv
+cleaned_data.csv
+sql/
+schema.sql
+queries.sql
 
-## Dataset
-Brazilian E-Commerce Public Dataset (Olist)
 
-## Output
-Cleaned and structured data stored in MySQL database
+## ▶️ How to Run
+```bash
+pip install -r requirements.txt
+python scripts/main.py
+
+## 📸 Output
+![Pipeline Output](images/output.png)
